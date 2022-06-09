@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
     <title>Tip Calculator</title>
-</head>
-<body>
-    <div class="logo"><img src="./img/logo.svg" alt=""></div>
+  </head>
+  <body>
+    <div class="logo"><img src="./img/logo.svg" alt="" /></div>
     <div class="calculator">
-        <div class="count-section">
-            <div class="bill">
-                <h4>Bill</h4>
-                <input type="text" name="bill" id="bill">
-            </div>
-            <div class="percent-btns">
-                <h4>Select Tip %</h4>
-                <button data-percent="five">5%</button>
-                <button data-percent="ten">10%</button>
-                <button data-percent="fifteen">15%</button>
-                <button data-percent="twentyfive">25%</button>
-                <button data-percent="fifty">50%</button>
-                <button data-percent="custom">Custom</button>
-            </div>
-            <div class="num-of-people">
-                <h4>Number of People</h4>
-                <input type="text" name="number-of-people" id="number-of-people">
-            </div>
+      <div class="count-section">
+        <div class="bill">
+          <h4>Bill</h4>
+          <input type="text" name="bill" id="bill" />
         </div>
-        <div class="result">
-            <div class="amount-result">
-
-            </div>
-            <div class="total-result">
-                
-            </div>
+        <div class="percent-btn-section">
+          <h4>Select Tip %</h4>
+          <div class="buttons">
+            <button data-percent="five">5%</button>
+            <button data-percent="ten">10%</button>
+            <button data-percent="fifteen">15%</button>
+            <button data-percent="twentyfive">25%</button>
+            <button data-percent="fifty">50%</button>
+            <button data-percent="custom">Custom</button>
+          </div>
         </div>
+        <div class="num-of-people">
+          <h4>Number of People</h4>
+          <input type="text" name="number-of-people" id="number-of-people" />
+        </div>
+      </div>
+      <div class="result">
+        <div class="amount-result">
+          <p>Tip Amount <br />/person <span>$0.00</span></p>
+        </div>
+        <div class="total-result">
+          <p>Total <br />/person <span>$0.00</span></p>
+        </div>
+        <button class="reset">Reset</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
