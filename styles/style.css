@@ -13,6 +13,7 @@
 body {
   background-color: var(--light-grayish-cyan);
   font-family: 'Space Mono', monospace;
+  scroll-behavior: smooth;
 }
 
 .container{
@@ -26,7 +27,7 @@ body {
 }
 
 .logo {
-  margin: 3rem 0 3rem;
+  margin: 1.8rem 0;
 }
 
 .calculator {
@@ -106,22 +107,43 @@ button:focus{
   padding: .6rem 0 1rem;
 }
 
-
-
-
-/*
-.result {
-  background-color: hsl(183, 100%, 15%);
-  color: hsl(0, 0%, 100%);
-  border-radius: 15px;
+.output{
+  padding: 2rem 1.5rem;
+  background-color: var(--very-dark-cyan);
+  border-radius: 10px;
 }
 
-.result,
-.count-section {
-  width: 290px;
-  height: 260px;
+.result{
+  color: var(--white);
 }
 
-.result span {
-  color: hsl(172, 67%, 45%);
-} */
+
+
+.result span{
+  color: var(--strong-cyan);
+  font-size: 25px;
+  float: right;
+  position: relative;
+  bottom: 30px;
+}
+
+.person{
+  padding: .4rem 0 1rem;
+  color: var(--light-grayish-cyan);
+  font-size: 11px;
+}
+
+.reset{
+  text-transform: uppercase;
+  width: 100%;
+  padding: 9px 0;
+  text-align: center;
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+}
+

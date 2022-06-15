@@ -33,12 +33,12 @@
           <input class="input-text icon-person" type="text" name="number-of-people" id="number-of-people" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
         </div>
       </div>
-      <div class="result">
-        <div class="amount-result">
-          <p>Tip Amount <br />/person <span>$0.00</span></p>
+      <div class="output">
+        <div class="result">
+          <p>Tip Amount <p class="person">/person</p> <span id="amount">$0.00</span></p>
         </div>
-        <div class="total-result">
-          <p>Total <br />/person <span>$0.00</span></p>
+        <div class="result">
+          <p>Total <p class="person">/person</p> <span id="total">$0.00</span></p>
         </div>
         <button class="reset">Reset</button>
       </div>
