@@ -12,10 +12,10 @@
     <div class="container">
       <div class="logo"><img src="./img/logo.svg" alt="logo" /></div>
     <div class="calculator">
-      <div class="count-section">
+      <div class="input">
         <div class="bill">
           <h4>Bill</h4>
-          <input class="input-text" type="text" name="bill" id="bill" />
+          <input class="input-text icon-bill" type="text" name="bill" id="bill" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');"/>
         </div>
         <div class="percent-btn-section">
           <h4>Select Tip %</h4>
@@ -30,7 +30,7 @@
         </div>
         <div class="num-of-people">
           <h4>Number of People</h4>
-          <input class="input-text" type="text" name="number-of-people" id="number-of-people" />
+          <input class="input-text icon-person" type="text" name="number-of-people" id="number-of-people" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
         </div>
       </div>
       <div class="result">

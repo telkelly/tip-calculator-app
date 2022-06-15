@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 :root{
+  --strong-cyan: hsl(172, 67%, 45%);
   --white: hsl(0, 0%, 100%);
   --very-dark-cyan: hsl(183, 100%, 15%);
   --dark-grayish-cyan: hsl(186, 14%, 43%);
@@ -30,34 +31,66 @@ body {
 
 .calculator {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 2.2rem;
   border-radius: 15px;
   background-color: var(--white);
-  
 }
 
 .input-text{
   width: 100%;
-  height: 1.6rem;
+  height: 2rem;
   margin-bottom: 1rem;
+  color: var(--very-dark-cyan);
 }
 
-.input-btn{
-  background-color: var(--light-grayish-cyan);
-  color: var(--very-dark-cyan);
+.icon-bill{
+  background: url(../img/icon-dollar.svg) no-repeat left;
+  background-size: 9px;
+  background-position: 15px;
+}
+
+.icon-person{
+  background: url(../img/icon-person.svg) no-repeat left;
+  background-size: 10px;
+  background-position: 15px;
+}
+
+.input-btn, .input-text, .btn{
+  background-color: var(--very-light-grayish-cyan);
   border: none;
-  border-radius: 5px;
-  width: 46%;
-  padding: 8px 0;
-  text-align: center;
+  text-align: right;
+  border-radius: 6px;
   font-size: 20px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
 }
 
-.count-section {
+.btn, .input-btn{
+  width: 46%;
+  padding: 6px 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn {
+  background-color:var(--very-dark-cyan);
+  color: white;
+}
+
+button:focus{
+  background-color: var(--strong-cyan);
   color: var(--very-dark-cyan);
 }
 
-.count-section h4{
+.input-btn::placeholder{
+  color: var(--dark-grayish-cyan);
+}
+
+.input {
+  color: var(--dark-grayish-cyan);
+}
+
+.input h4{
   padding-bottom: .6rem;
 }
 
@@ -70,21 +103,11 @@ body {
   flex-flow: wrap;
   justify-content: space-between;
   gap: .6rem;
+  padding: .6rem 0 1rem;
 }
 
 
-.btn {
-  background-color: hsl(183, 100%, 15%);
-  border: none;
-  border-radius: 5px;
-  width: 46%;
-  color: white;
-  padding: 8px 0;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-}
+
 
 /*
 .result {
