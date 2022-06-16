@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="./styles/mediaqueries.css">
     <title>Tip Calculator</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
         </div>
         <div class="percent-btn-section">
           <h4>Select Tip %</h4>
-          <div class="buttons">
+          <div class="btn-wrapper">
             <button class="btn" data-percent="five">5%</button>
             <button class="btn" data-percent="ten">10%</button>
             <button class="btn" data-percent="fifteen">15%</button><br>
@@ -34,11 +35,21 @@
         </div>
       </div>
       <div class="output">
-        <div class="result">
-          <p>Tip Amount <p class="person">/person</p> <span id="amount">$0.00</span></p>
+        <div class="wrapper">
+          <div class="line-wrapper">
+          <div class="title-wrapper">
+          <h4 class="title">Tip Amount</h4>
+          <p class="desc">/ person</p>
+          </div>
+          <p class="value">$0.00</p>
         </div>
-        <div class="result">
-          <p>Total <p class="person">/person</p> <span id="total">$0.00</span></p>
+        <div class="line-wrapper">
+          <div class="title-wrapper">
+          <h4 class="title">Total</h4>
+          <p class="desc">/ person</p>
+          </div>
+          <p class="value">$0.00</p>
+        </div>
         </div>
         <button class="reset">Reset</button>
       </div>

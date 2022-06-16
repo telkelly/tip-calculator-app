@@ -1,0 +1,29 @@
+@media (min-width: 767px) {
+
+    .container{
+        width: 700px;
+        margin: 0 auto;
+    }
+    
+  .calculator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input {
+    width: 45%;
+  }
+
+  .input-btn, .input-text, .btn{
+  font-size: 1.1rem;
+}
+
+  .btn, .input-btn{
+  width: 32%;
+}
+
+  .output {
+    width: 42%;
+  }
+}
