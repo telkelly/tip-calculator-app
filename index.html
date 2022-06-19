@@ -16,7 +16,7 @@
       <div class="input">
         <div class="bill">
           <h4>Bill</h4>
-          <input class="input-text icon-bill" type="text" name="bill" id="bill" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');"/>
+          <input class="input-text icon-bill" type="text" name="bill" id="inp-bill" placeholder="0"/>
         </div>
         <div class="percent-btn-section">
           <h4>Select Tip %</h4>
@@ -24,14 +24,14 @@
             <button class="btn" data-percent="five">5%</button>
             <button class="btn" data-percent="ten">10%</button>
             <button class="btn" data-percent="fifteen">15%</button><br>
-            <button class="btn" data-percent="twentyfive">25%</button>
+            <button class="btn btn-active" data-percent="twentyfive">25%</button>
             <button class="btn" data-percent="fifty">50%</button>
             <input class="input-btn" placeholder="Custom" data-percent="custom"></input>
           </div>
         </div>
         <div class="num-of-people">
           <h4>Number of People</h4>
-          <input class="input-text icon-person" type="text" name="number-of-people" id="number-of-people" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"/>
+          <input class="input-text icon-person" type="text" name="number-of-people" id="number-of-people" placeholder="0"/>
         </div>
       </div>
       <div class="output">
@@ -55,5 +55,6 @@
       </div>
     </div>
     </div>
+    <script src="./js/app.js"></script>
   </body>
 </html>

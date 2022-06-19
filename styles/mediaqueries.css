@@ -1,5 +1,4 @@
 @media (min-width: 767px) {
-
     .container{
         width: 700px;
         margin: 0 auto;
@@ -11,19 +10,39 @@
     justify-content: space-between;
   }
 
+  .percent-btn-section, .num-of-people{
+  padding-top: 1.2rem;
+}
+
   .input {
     width: 45%;
   }
 
   .input-btn, .input-text, .btn{
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
-  .btn, .input-btn{
-  width: 32%;
+  .btn{
+  width: 30%;
+}
+
+.input-btn{
+  width: 28%;
+}
+
+.btn, .input-btn{
+  margin: .4rem 0 .4rem .5rem;
+}
+
+.btn:nth-child(1),.btn:nth-child(5){
+  margin: .4rem 0 .4rem 0rem;
 }
 
   .output {
-    width: 42%;
+    width: 40%;
+  }
+
+  .value{
+    font-size: 2.2rem;
   }
 }
