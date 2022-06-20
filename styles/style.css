@@ -122,6 +122,15 @@ body {
   color: var(--dark-grayish-cyan);
 }
 
+.people-destriction{
+  display: none;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 12px;
+  color: rgba(160, 60, 60, 0.779);
+  transition: all .5s ease;
+}
+
 
 
 .output{
