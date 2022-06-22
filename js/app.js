@@ -64,7 +64,7 @@ function setTipCustomValue() {
 
 function setNumOfPeople() {
   if (numOfPeopleInput.value <= 0) {
-    peopleDestriction.style.display = "flex";
+    peopleDestriction.style.display = "inline";
   } else {
     peopleDestriction.style.display = "none";
   }
@@ -117,4 +117,7 @@ function reset() {
 
   numOfPeopleInput.value = '1';
   setNumOfPeople();
+
+  results[0].innerHTML = '$0.00';
+  results[1].innerHTML = "$0.00";
 }
